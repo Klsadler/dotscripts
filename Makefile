@@ -2,7 +2,7 @@ SRCS = survivorWinners.sh funScript.sh
 
 link: $(SRCS)
 	for i in $(SRCS) ; do \
-		ln -s ~/.scripts/$$i ~/bin ; \
+		ln -sf ~/.scripts/$$i ~/bin ; \
 	done;	
 	
 unlink: $(SRCS)
